@@ -40,15 +40,29 @@ This project includes the following analyses:
 ---
 
 ## Repository Structure
+
+```
 core-relief-marketing-ops-case/
 │
-├── docs/ → Business documentation and case study write-ups
-├── sql/ → SQL queries used for analysis
-├── visuals/ → Charts and tables
-├── presentations/ → Final summary materials
-└── README.md → Project overview
-
----
+├── docs/            → Business documentation and case study write-ups
+│   ├── Executive summary
+│   ├── Business model overview
+│   ├── Contribution analysis
+│   ├── Budget reallocation simulation
+│   ├── Assumptions
+│   └── Data dictionary
+│
+├── sql/             → SQL queries used for analysis
+│   ├── Data cleaning
+│   ├── Exploratory analysis
+│   ├── Contribution analysis
+│   ├── Budget simulation
+│   └── Validation checks
+│
+├── visuals/         → Charts and tables
+├── presentations/   → Final summary materials
+└── README.md        → Project overview
+```
 
 ## Tools Used
 - SQL
