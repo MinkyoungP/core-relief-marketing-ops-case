@@ -36,7 +36,7 @@ SQL was used to structure and analyze the dataset, and scenario simulations were
 - However, increasing CPA reduced the expected revenue gain from budget reallocation.
 - The simulation showed that budget reallocation alone does not guarantee profit improvement if acquisition costs increase.
 
-- ## 5. Business Recommendations
+  ## 5. Business Recommendations
 
 Based on the analysis, the following recommendations were made:
 
@@ -45,7 +45,7 @@ Based on the analysis, the following recommendations were made:
 - Scenario-based planning should be used before major budget reallocation decisions.
 - Marketing and Finance teams should align on contribution-based performance metrics.
   
-- ## 6. Limitations & Assumptions
+  ## 6. Limitations & Assumptions
 
 This project is based on a simulated dataset and several assumptions:
 
