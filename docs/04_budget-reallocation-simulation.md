@@ -1,54 +1,67 @@
-# Contribution Analysis
+# Budget Reallocation Simulation
 
 ## 1. Objective
-This analysis looks at how revenue and contribution margin differ across customer segments.
+This simulation explores how reallocating marketing budget across customer segments could impact overall performance.
 
-Usually, performance is judged based on revenue, but that doesn’t always tell the full story.  
-So here, I focused more on contribution margin to understand how efficient each segment actually is from a cost perspective.
-
----
-
-## 2. Business Question
-The main questions I wanted to answer were:
-
-- Which customer segments are actually driving the most profit?
-- How does contribution margin compare to revenue across segments?
-- Do high-revenue segments also turn out to be the most profitable?
+The goal was to understand whether shifting budget toward more efficient segments would improve contribution margin, and how that might affect total revenue.
 
 ---
 
-## 3. Methodology
-The analysis was done using aggregated data by customer segment.
+## 2. Background
+From the contribution analysis, it was clear that not all segments performed equally.
 
-I used the following metrics:
+Some segments drove strong revenue but had lower efficiency, while others were more profitable despite contributing less to total revenue.
 
-- Revenue  
-- Marketing Cost  
-- Variable Cost  
-
-Contribution margin was calculated as:
-
-Contribution Margin = Revenue - Variable Cost - Marketing Cost
-
-SQL was used to group the data and calculate these metrics across segments.
+This raised a natural question:  
+Would performance improve if more budget was allocated to the more efficient segments?
 
 ---
 
-## 4. Key Findings
-- Some segments that looked strong in terms of revenue weren’t as profitable once costs were included.
-- A few segments generated high revenue but had lower contribution margins due to higher acquisition costs.
-- On the other hand, some lower-revenue segments turned out to be more efficient and had stronger margins.
-- Overall, revenue contribution and profit contribution didn’t really line up across segments.
+## 3. Approach
+To test this, I created a simple simulation comparing two scenarios:
+
+- Baseline (current budget allocation)
+- Reallocation (adjusted budget distribution across segments)
+
+The idea was to shift budget away from less efficient segments and toward segments with stronger contribution margins.
 
 ---
 
-## 5. Business Implications
-What this showed is that looking at revenue alone can be misleading when making budget decisions.
+## 4. Scenario Design
+In the reallocation scenario:
 
-From a Marketing Ops perspective:
+- Budget share for high-margin segments was increased
+- Budget for lower-efficiency segments was reduced
 
-- Budget shouldn’t be allocated based only on revenue.
-- Some smaller segments might actually be more valuable if they are more efficient.
-- It makes more sense to evaluate performance using metrics like contribution margin and CPA.
+At the same time, I also considered the possibility that CPA could increase when scaling certain segments.
 
-In the end, this analysis highlights the need to balance growth and efficiency, rather than focusing on just one.
+To reflect this, I applied moderate CPA increases to selected segments in the simulation.
+
+---
+
+## 5. Key Findings
+- Reallocating budget toward higher-margin segments improved the overall contribution margin structure.
+- However, increases in CPA reduced some of the expected gains from reallocation.
+- In some cases, revenue growth slowed slightly as budget shifted away from high-volume segments.
+- The results showed that budget reallocation alone does not guarantee better performance without considering cost dynamics.
+
+---
+
+## 6. Business Implications
+This simulation highlights a few important points:
+
+- Budget decisions should consider both efficiency and scale.
+- Shifting budget to high-margin segments can improve profitability, but only if acquisition costs remain stable.
+- Scenario-based planning is important before making large budget changes.
+- Growth and efficiency need to be balanced, rather than optimized in isolation.
+
+---
+
+## 7. Limitations
+This simulation is based on simplified assumptions:
+
+- CPA increases were estimated, not observed
+- Customer behavior changes were not modeled
+- Fixed costs were excluded from the analysis
+
+Because of this, the results should be interpreted as directional rather than predictive.
