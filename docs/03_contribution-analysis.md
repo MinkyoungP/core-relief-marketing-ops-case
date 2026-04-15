@@ -1,26 +1,26 @@
 # Contribution Analysis
 
 ## 1. Objective
-This analysis looks at how revenue and contribution margin differ across customer segments, with the goal of understanding which segments are actually driving profitability.
+This analysis looks at how revenue and contribution margin differ across customer segments.
 
-While revenue is often used as the primary performance metric, it doesn’t always reflect how efficient the marketing spend is.  
-For that reason, this analysis focuses on contribution margin to get a clearer view of true performance.
+Usually, performance is judged based on revenue, but that doesn’t always tell the full story.  
+So here, I focused more on contribution margin to understand how efficient each segment actually is from a cost perspective.
 
 ---
 
 ## 2. Business Question
-This analysis is built around a few key questions:
+The main questions I wanted to answer were:
 
-- Which customer segment generates the highest contribution margin?
+- Which customer segments are actually driving the most profit?
 - How does contribution margin compare to revenue across segments?
-- Do the segments that drive the most revenue also drive the most profit?
+- Do high-revenue segments also turn out to be the most profitable?
 
 ---
 
 ## 3. Methodology
-The analysis was conducted using aggregated data at the customer segment level.
+The analysis was done using aggregated data by customer segment.
 
-The key metrics used were:
+I used the following metrics:
 
 - Revenue  
 - Marketing Cost  
@@ -30,25 +30,25 @@ Contribution margin was calculated as:
 
 Contribution Margin = Revenue - Variable Cost - Marketing Cost
 
-SQL was used to aggregate and calculate these metrics across segments.
+SQL was used to group the data and calculate these metrics across segments.
 
 ---
 
 ## 4. Key Findings
-- Segments that appeared strong in terms of revenue were not always the most profitable once costs were taken into account.
-- Some segments generated high revenue but showed lower contribution margins due to higher acquisition costs.
-- On the other hand, certain segments generated less revenue but were more efficient, with stronger contribution margins.
-- Overall, there was a clear gap between revenue contribution and actual profit contribution across segments.
+- Some segments that looked strong in terms of revenue weren’t as profitable once costs were included.
+- A few segments generated high revenue but had lower contribution margins due to higher acquisition costs.
+- On the other hand, some lower-revenue segments turned out to be more efficient and had stronger margins.
+- Overall, revenue contribution and profit contribution didn’t really line up across segments.
 
 ---
 
 ## 5. Business Implications
-These findings suggest that relying on revenue alone can lead to inefficient budget allocation.
+What this showed is that looking at revenue alone can be misleading when making budget decisions.
 
-From a Marketing Operations perspective:
+From a Marketing Ops perspective:
 
-- Budget decisions should be based on contribution margin, not just top-line revenue.
-- High-margin segments may be more valuable in the long term, even if their revenue contribution is smaller.
-- Marketing performance should be evaluated with efficiency metrics such as contribution margin and CPA.
+- Budget shouldn’t be allocated based only on revenue.
+- Some smaller segments might actually be more valuable if they are more efficient.
+- It makes more sense to evaluate performance using metrics like contribution margin and CPA.
 
-Overall, this highlights the importance of balancing growth and profitability when making budget allocation decisions.
+In the end, this analysis highlights the need to balance growth and efficiency, rather than focusing on just one.
